@@ -135,50 +135,48 @@ function perDay(petAge, petPounds) {
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-function kakashi() {
-    let k = kakashi;
-    return k;
-    
-    function guySensei() {
-    let guy = Math.random();
-    if (guy < 0.34) {
-      guy = "rock";
-    } else if (guy <= 0.67) {
-      guy = "paper";
-    } else {
-      guy = "scissors";
-    }
-    console.log(guy);
-    return guy;
-    }
-    
-    function compare(K, guy) {
-    if (k === guy) {
-      return "It's a tie!";
-    } else if (k === "rock") {
-      if (guy === "paper") {
-        return "Guy Sensie wins!";
-      } else {
-        return "Kakashi Sensei wins!";
-      }
-    } else if (k === "paper") {
-      if (guy === "scissors") {
-        return "Guy Sensei wins!";
-      } else {
-        return "Kakashi Sensei wins!";
-      }
-    } else if (k === "scissors") {
-      if (guy === "rock") {
-        return "Guy Sensei wins!";
-      } else {
-        return "Kakashi Sensei wins!";
-      }
-    }
-  }
-    
-  }
+function kakashi(kakashi) {
+ 
   
-  kakashi("rock");
+    //get random comp selection
+     let guy = Math.random();
+     if (guy < 0.34) {
+       guy = "rock";
+     } else if (guy <= 0.67) {
+       guy = "paper";
+     } else {
+       guy = "scissors";
+     }
+     
+     //compare user to computer
+     if (kakashi === guy) {
+       return "It's a tie!";
+     } else if (kakashi === "rock") {
+       if (guy === "paper") {
+         return "Guy Sensie wins!";
+       } else {
+         return "Kakashi Sensei wins!";
+       }
+     } else if (kakashi === "paper") {
+       if (guy === "scissors") {
+         return "Guy Sensei wins!";
+       } else {
+         return "Kakashi Sensei wins!";
+       }
+     } else if (kakashi === "scissors") {
+       if (guy === "rock") {
+         return "Guy Sensei wins!";
+       } else {
+         return "Kakashi Sensei wins!";
+       }
+     }
+     console.log(guy);
+     console.log(kakashi);
+     
+   }
+     
+   kakashi("paper")
+   console.log(kakashi("paper"))
   
 
 /************************************************************** Task 5 **************************************************************/
@@ -216,7 +214,14 @@ feetToCM(10);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+let bot = 0;
 
+function annoyingSong(bot){
+  for (i = 99; i > 0; i--) {
+   console.log(`There are  ${i}   bottles on the wall wall, take one down and pass it around and there are ${i-1}   left on the wall.`)
+ }
+ }
+ annoyingSong(5);
 
 
 
