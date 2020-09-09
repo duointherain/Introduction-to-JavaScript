@@ -135,7 +135,50 @@ function perDay(petAge, petPounds) {
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
+function kakashi() {
+    let k = kakashi;
+    return k;
+    
+    function guySensei() {
+    let guy = Math.random();
+    if (guy < 0.34) {
+      guy = "rock";
+    } else if (guy <= 0.67) {
+      guy = "paper";
+    } else {
+      guy = "scissors";
+    }
+    console.log(guy);
+    return guy;
+    }
+    
+    function compare(K, guy) {
+    if (k === guy) {
+      return "It's a tie!";
+    } else if (k === "rock") {
+      if (guy === "paper") {
+        return "Guy Sensie wins!";
+      } else {
+        return "Kakashi Sensei wins!";
+      }
+    } else if (k === "paper") {
+      if (guy === "scissors") {
+        return "Guy Sensei wins!";
+      } else {
+        return "Kakashi Sensei wins!";
+      }
+    } else if (k === "scissors") {
+      if (guy === "rock") {
+        return "Guy Sensei wins!";
+      } else {
+        return "Kakashi Sensei wins!";
+      }
+    }
+  }
+    
+  }
   
+  kakashi("rock");
   
 
 /************************************************************** Task 5 **************************************************************/
