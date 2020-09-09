@@ -2,24 +2,44 @@
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
 
+const votingAge = 18;
+
+if(votingAge > 18){
+  console.log(true);
+}
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+const vOne = 1;
+const vTwo = 2;
 
+if (vOne < vTwo){
+    vOne = "Heero";
+    console.log (vOne);
+}
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
+let vThree = parseInt("1900", 10);
+console.log (vThree);
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
+function multi(factor1, factor2) {
+    return factor1*factor2;
+    
+    
+    
+  }
+  let total = (multi(1, 2));
+  console.log (total);
+  
 
 
 
@@ -27,7 +47,15 @@
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+let yourAge = 54;
 
+
+function dogYears() {
+  return yourAge*7;
+  
+}
+let age = (dogYears());
+console.log (age);
 
 
 
@@ -49,11 +77,58 @@
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+//Two percent of 15, is .3, so I'm right. The dog would need to be a little under 25 pounds for 2% to be .49
+
+let petAge = 0;
+let petPounds = 0;
+let petFood = 0;
+let petMonth = 0;
 
 
 
 
-/************************************************************** Task 4 **************************************************************/
+function perDay(petAge, petPounds) {
+  if (petAge >= 1 && petPounds < 5){
+    petFood = petPounds*.05;
+    return petFood;
+  }
+  
+    else if (petAge >= 1 && petPounds > 6 && petPounds < 10){
+       petFood = petPounds*.04;
+       return petFood;
+    }
+  
+    else if (petAge >= 1 && petPounds >11 && petPounds < 15){
+       petFood = petPounds*.03;
+       return petFood;
+    }
+  
+    else if(petAge => 1 && petPounds >= 15){
+       petFood = petPounds*.02;
+       return petFood;
+    }
+    else if(petAge => 0.167 && petAge < 0.333){
+       petFood = petPounds*.1;
+       return petFood;
+    }
+   else if(petAge => 0.333 && petAge < 0.583){
+       petFood = petPounds*.05;
+       return petFood;
+     }
+   else if(petAge => 0.583 && petAge < 1){
+       petFood = petPounds*.04;
+       return petFood;
+     }
+    else 
+      return 'please re-enter your numbers';
+}
+
+ console.log(perDay(1, 25));
+
+
+
+
+//************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
