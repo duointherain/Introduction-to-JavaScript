@@ -200,7 +200,15 @@ kmToMiles(10);
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
 
+function feetToCM(f){
+    let cM = f*30.48
+    console.log ("You have " + cM + " cm.")
+  
+  
+}
 
+
+feetToCM(10);
 
 
 /************************************************************** Task 6 **************************************************************/
