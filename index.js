@@ -186,7 +186,15 @@ function kakashi() {
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
 
+function kmToMiles(k){
+    let kM = k/1.609344
+    console.log ("You have " + kM + " miles.")
+  
+  
+}
 
+
+kmToMiles(10);
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
