@@ -226,13 +226,21 @@ function annoyingSong(bot){
 
 
 /************************************************************** Task 7 **************************************************************/
-//Grade Calculator
-//write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
-//90s should be A 
-//80s should be B 
-//70s should be Cs 
-//60s should be D 
-//and anything below 60 should be F
+function yourGrade(work) {
+    if (work >= 90) {
+      return "You earned an A.";
+    } else if (work >= 80 && work < 90) {
+      return "You earned a B.";
+    } else if (work >= 70 && work < 80) {
+      return "You earned a C.";
+    } else if (work >= 60 && work < 70) {
+      return "You earned a D.";
+    } else {
+      return "You earned an F, please reach out for tutoring.";
+    }
+  }
+  
+  console.log(yourGrade(50));
   
 
   
